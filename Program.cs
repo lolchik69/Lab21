@@ -6,6 +6,7 @@ class Program {
     public delegate double MathOperator(double a, double b);
 
     public static void Main(string[] args) {
+        System.Console.WriteLine("Привет всем");
         EnterA();
         EnterB();
         Console.WriteLine(ExecuteOperation(a, b, ChooseOperator()));
