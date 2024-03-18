@@ -7,6 +7,7 @@ class Program {
 
     public static void Main(string[] args) {
     } 
+
     public static void EnterA() {
         Console.WriteLine("Enter a: ");
         string str_a = Console.ReadLine()!;
@@ -23,6 +24,10 @@ class Program {
             str_b = Console.ReadLine()!;
         }
     }
+    public static double ExecuteOperation(double a, double b, MathOperator func) {
+        return func(a, b);
+    }
+
     public static MathOperator ChooseOperator() {
         Console.WriteLine("Choose one of four operation(+,-,*,/): ");
         string choice = Console.ReadLine()!;
