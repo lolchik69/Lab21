@@ -3,7 +3,7 @@
 class Program {
     static double a;
     static double b;
-
+    static double c;
     public static void Main(string[] args) {
     } 
     public static void EnterA() {
