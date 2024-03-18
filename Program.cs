@@ -7,10 +7,10 @@ class Program {
     public static void Main(string[] args) {
     } 
     public static void EnterA() {
-        Console.WriteLine("Enter a: ");
+        Console.WriteLine("Введите a: ");
         string str_a = Console.ReadLine()!;
         while (!double.TryParse(str_a, out a)) {
-            Console.WriteLine("Try again");
+            Console.WriteLine("Попробуй");
             str_a = Console.ReadLine()!;
         }
     }
@@ -18,7 +18,7 @@ class Program {
         Console.WriteLine("Введите b: ");
         string str_b = Console.ReadLine()!;
         while (!double.TryParse(str_b, out b)) {
-            Console.WriteLine("Try again");
+            Console.WriteLine("Попробуй");
             str_b = Console.ReadLine()!;
         }
     }
