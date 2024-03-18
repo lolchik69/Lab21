@@ -3,6 +3,7 @@
 class Program {
     static double a;
     static double b;
+    public delegate double MathOperator(double a, double b);
 
     public static void Main(string[] args) {
     } 
@@ -20,6 +21,25 @@ class Program {
         while (!double.TryParse(str_b, out b)) {
             Console.WriteLine("Try again");
             str_b = Console.ReadLine()!;
+        }
+    }
+    public static MathOperator ChooseOperator() {
+        Console.WriteLine("Choose one of four operation(+,-,*,/): ");
+        string choice = Console.ReadLine()!;
+        while (true) {
+            switch (choice) {
+                case "+":
+                    return Add;
+                case "-":
+                    return Subtract;
+                case "*":
+                    return Multiply;
+                case "/":
+                    return Divide;
+                default:
+                    Console.WriteLine("Try again");
+                    break;
+            }
         }
     }
     public static double Add(double a, double b) => a + b;
