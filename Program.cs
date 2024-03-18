@@ -12,7 +12,7 @@ class Program {
     } 
 
     public static void EnterA() {
-        Console.WriteLine("Enter a asdgit: ");
+        Console.WriteLine("Введите a: ");
         string str_a = Console.ReadLine()!;
         while (!double.TryParse(str_a, out a)) {
             Console.WriteLine("Try again");
@@ -20,7 +20,7 @@ class Program {
         }
     }
         public static void EnterB() {
-        Console.WriteLine("Enter b: ");
+        Console.WriteLine("Введите b: ");
         string str_b = Console.ReadLine()!;
         while (!double.TryParse(str_b, out b)) {
             Console.WriteLine("Try again");
